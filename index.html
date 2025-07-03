@@ -105,7 +105,32 @@
         <h1 class="btn-header">Media Upload Tool</h1>
         
         <a href="instructions.html" target="_blank"><button class="button1">View Instructions</button></a> 
-        <a href="https://gofile.io/home" target="_blank"><button class="button2">Upload Files to GoFile</button></a>
+   
+        <button class="button2" onclick="openGofile()">Upload to GoFile</button>
+
+<script>
+function openGofile() {
+  const gofileURL = "https://gofile.io/uploadFiles";
+  const width = 480;
+  const height = 480;
+  const isMobile = window.innerWidth < 768;
+
+  if (isMobile) {
+    // On mobile, open in a full-screen tab
+    window.open(gofileURL, "_blank");
+  } else {
+    // On desktop, open centered popup
+    const left = (window.innerWidth - width) / 2;
+    const top = (window.innerHeight - height) / 2;
+
+    window.open(
+      gofileURL,
+      "popupWindow",
+      `width=${width},height=${height},left=${left},top=${top},resizable=yes,scrollbars=yes`
+    );
+  }
+}
+</script>
             
     </div>
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScndkr2C9PSHf7Xmiax8P1qcB6J3KJFn-7VL4zxLWfDx-Ncpg/viewform?embedded=true" width="600" height="450" frameborder="0" marginheight="0" marginwidth="0" style="max-width: 98vw;">Loading…</iframe>
