@@ -7,13 +7,17 @@
 </head>
 
 <style>
+    @font-face {
+        font-family: 'poppins';
+        src: url(fonts/Poppins-Regular.ttf);
+    }
     body {
         background-color: rgb(224, 241, 255);
     }
 
     .banner {
         font-size: 30px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: "poppins";
         text-align: center;
         margin: 0px auto;
         padding: 24px 35px;
@@ -25,7 +29,7 @@
 
     .heading-para {
         font-size: 22px;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: "poppins";
         color: black;
         margin: 20px;
         margin-top: 30px;
@@ -34,7 +38,7 @@
 
     .box1 {
         font-size: 24px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: "poppins";
         width: auto;
         height: auto;
         max-width: 98vw;
@@ -44,22 +48,48 @@
         border-radius: 25px;
         padding: 20px;
         padding-left: 30px;
+        font-weight: bold;
         margin: 35px;
+    }
+
+    @media (max-width: 600px) {
+        .box1 {
+        font-size: 22px;
+        font-family: "poppins";
+        font-weight: bold;
+        width: auto;
+        height: auto;
+        max-width: 98vw;
+        background-color: white;
+        box-shadow: 0px 0px 3px rgb(106, 106, 106);
+        border: none;
+        border-radius: 25px;
+        padding: 20px;
+        padding-left: 30px;
+        margin: 20px;
+        justify-content: center;
+        align-items: center;
+        }
+        .btn-header {
+            text-align: center;
+        }
+
     }
 
     .btn-header {
         font-size: 28px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: "poppins";
+        
     }
 
     p {
         font-size: 20px;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: "poppins";
     }
 
     .button1 {
         font-size: 19px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: "poppins";
         background-color: rgb(106, 0, 255);
         color: white;
         padding: 15px 30px;
@@ -76,7 +106,7 @@
 
     .button2 {
         font-size: 19px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: "poppins";
         background-color: blue;
         color: white;
         padding: 15px 30px;
@@ -94,7 +124,7 @@
     /* New instruction paragraph style */
     #instructions p {
         font-size: 18px;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: "poppins";
         padding: 6px 0;
     }
 </style>
